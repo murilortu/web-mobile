@@ -5,41 +5,244 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 02</title>
 
-  <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+  <div class="d-flex flex-wrap gap-2">
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+  </div>
+
+  <div class="mt-3 d-flex gap-2">
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+    </button>
+
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-grow spinner-grow-sm"></span>
+      Loading..
+    </button>
+  </div>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-  <button type="button" class="btn btn-outline-primary">Primary</button>
-  <button type="button" class="btn btn-outline-secondary">Secondary</button>
-  <button type="button" class="btn btn-outline-success">Success</button>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <button type="button" class="btn btn-outline-warning">Warning</button>
-  <button type="button" class="btn btn-outline-danger">Danger</button>
-  <button type="button" class="btn btn-outline-dark">Dark</button>
-  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+<div class="container mt-3">
 
   
-  <button class="btn btn-primary">
-    <span class="spinner-border spinner-border-sm"></span>
-  </button>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
-  <button class="btn btn-primary">
-    <span class="spinner-border spinner-border-sm"></span>
-    Loading..
-  </button>
+<div class="container mt-3">
+  <h2>Alerts</h2>
+  <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> Indicates a slightly less important action.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> Dark grey alert.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> Light grey alert.
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-success" style="width:40%">
+    Free Space
+  </div>
+  <div class="progress-bar bg-warning" style="width:10%">
+    Warning
+  </div>
+  <div class="progress-bar bg-danger" style="width:20%">
+    Danger
+  </div>
+</div>
 
-  <button class="btn btn-primary" disabled>
-    <span class="spinner-border spinner-border-sm"></span>
-    Loading..
-  </button>
 
-  <button class="btn btn-primary" disabled>
-    <span class="spinner-grow spinner-grow-sm"></span>
-    Loading..
-  </button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <p>Image at the top (card-img-top):</p>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  
+  <p>Image at the bottom (card-img-bottom):</p>
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Neymar</h4>
+      <p class="card-text"></p>
+      <a href="#" class="btn btn-primary">Like</a>
+    </div>
+    <img class="card-img-bottom" src="data:image/jpeg;base64,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" alt="Card image" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-3">
+  <h3>Navbar Forms</h3>
+  <p>You can also include forms inside the navigation bar.</p>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
 
   <!-- JS do Bootstrap -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
