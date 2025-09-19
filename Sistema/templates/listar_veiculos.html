@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}Listar Veículos{% endblock %}
+
+{% block conteudo %}
+<div class="container py-4">
+  <h1 class="h4 mb-3">Listagem de Veículos ({{ veiculo|length }})</h1>
+
+  <table class="table table-striped table-hover align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>ID</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Cor</th>
+        <th>Combustível</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for v in veiculo %}
+      <tr>
+        <td>{{ v.id }}</td>
+        <td>{{ v.get_marca_display }}</td>
+        <td>{{ v.modelo }}</td>
+        <td>{{ v.ano }}</td>
+        <td>{{ v.get_cor_display }}</td>
+        <td>{{ v.get_combustivel_display }}</td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="6" class="text-center">Nenhum veículo cadastrado.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
